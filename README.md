@@ -106,3 +106,9 @@ SELECT 'Total de artículos' AS nombre_articulo, COUNT(*) AS precio_articulo FRO
 `SELECT id_fabricante, AVG(precio_articulo) AS promedio FROM Articulo GROUP BY id_fabricante;`
 
 ![Consulta 14](img/consulta_14.png  "Consulta 14")
+
+15. Mostrar el precio promedio de los productos de cada fabricante, mostrando el nombre del fabricante.
+
+`SELECT F.nombre_fabricante, AVG(A.precio_articulo) AS promedio FROM Articulo A JOIN Fabricante F ON A.id_fabricante = F.id_fabricante GROUP BY F.nombre_fabricante;`
+
+![Consulta 15](img/consulta_15.png  "Consulta 15")
