@@ -94,3 +94,9 @@ SELECT 'Total de artículos' AS nombre_articulo, COUNT(*) AS precio_articulo FRO
 
 ![Consulta 12](img/consulta_12.png  "Consulta 12") 
 
+13. Obtener un listado de artículos, incluyendo el nombre del artículo, su precio y el nombre de su fabricante.
+
+
+`SELECT A.nombre_articulo, A.precio_articulo, F.nombre_fabricante FROM Articulo A JOIN Fabricante F ON A.id_fabricante = F.id_fabricante;`
+
+![Consulta 13](img/consulta_13.png  "Consulta 13") 
